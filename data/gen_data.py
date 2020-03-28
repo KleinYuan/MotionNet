@@ -10,12 +10,6 @@ import argparse
 from data.data_utils import voxelize_occupy, gen_2d_grid_gt
 
 
-def check_folder(folder_name):
-    if not os.path.exists(folder_name):
-        os.mkdir(folder_name)
-    return folder_name
-
-
 parser = argparse.ArgumentParser()
 parser.add_argument('-r', '--root', default=None, type=str, help='Root path to nuScenes dataset')
 parser.add_argument('-s', '--split', default='train', type=str, help='The data split [train/val/test]')
@@ -240,7 +234,8 @@ def gen_data():
                     sparse_bev_data = convert_to_sparse_bev(dense_bev_data)
 
                     # save the data
-                    save_directory = check_folder(os.path.join(args.savepath, str(scene_idx) + '_' + str(save_seq_cnt)))
+                    save_directory = os.path.join(args.savepath, str(scene_idx) + '_' + str(save_seq_cnt))
+                    os.makedirs(save_directory, exist_ok=True)
                     save_file_name = os.path.join(save_directory, str(seq_idx) + '.npy')
                     np.save(save_file_name, arr=sparse_bev_data)
 
