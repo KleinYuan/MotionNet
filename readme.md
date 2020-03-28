@@ -2,6 +2,8 @@
 
 ![](https://github.com/pxiangwu/MotionNet/blob/master/teaser/example.gif "")
 
+![](https://github.com/pxiangwu/MotionNet/blob/master/teaser/example2.gif "")
+
 Copyright &copy; 2020 Mitsubishi Electric Research Laboratories (MERL), non-commercial use.
 Downlable released package: https://www.merl.com/research/license#MotionNet
 
