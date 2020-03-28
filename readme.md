@@ -13,7 +13,7 @@ Downlable released package: https://www.merl.com/research/license#MotionNet
   - Note that, the MGDA-related code currently can only run on PyTorch 1.1 (due to the official implementation of [MGDA](https://github.com/intel-isl/MultiObjectiveOptimization)). Such codes include `min_norm_solvers.py`, `train_single_seq_MGDA.py` and `train_multi_seq_MGDA.py`.
   
 ## Usage:
-1. To run the code, first need to add the path to the root folder. For example:
+1. To run the code, first need to add the environmental path for the root folder. For example:
 ```
 export PYTHONPATH=/home/pwu/PycharmProjects/MotionNet:$PYTHONPATH
 export PYTHONPATH=/home/pwu/PycharmProjects/MotionNet/nuscenes-devkit/python-sdk:$PYTHONPATH
