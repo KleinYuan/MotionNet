@@ -8,7 +8,7 @@ Downlable released package: https://www.merl.com/research/license#MotionNet
 ## Requirements
 - CUDA >= 9.0
 - Python 3
-- pyquaternion, Matplotlib, PIL, numpy, cv2, tqdm (and other relevant packages which can be easily installed with pip or conda)
+- pyquaternion, Matplotlib, Pillow, numpy, cv2, tqdm (and other relevant packages which can be easily installed with pip or conda)
 - PyTorch >= 1.1
   - Note that, the MGDA-related code currently can only run on PyTorch 1.1 (due to the official implementation of [MGDA](https://github.com/intel-isl/MultiObjectiveOptimization)). Such codes include `min_norm_solvers.py`, `train_single_seq_MGDA.py` and `train_multi_seq_MGDA.py`.
   
